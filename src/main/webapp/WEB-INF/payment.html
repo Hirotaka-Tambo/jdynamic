@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang="ja"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>支払いフォーム</title> 
+</head> 
+<body> 
+    <h1>支払い方法を選択</h1> 
+    <form action="/jdynamic/PaymentServlet" method="post"> 
+        <p>支払い方法:</p> 
+        <input type="radio" name="payment" value="credit">クレジット<br> 
+        <input type="radio" name="payment" value="cash">現金<br> 
+        <p>オプション:</p> 
+        <input type="checkbox" name="option" value="gift">ギフト包装<br> 
+        <input type="checkbox" name="option" value="express">速達<br> 
+        <input type="submit" value="送信"> 
+    </form> 
+</body> 
+</html>
