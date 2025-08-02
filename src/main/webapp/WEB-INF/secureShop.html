@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ログインページ</title>
+</head>
+<body>
+	<h1>ログインしてください</h1>
+	<form action = "/jdynamic/UserAuthServlet" method="post">
+		ユーザー名:<input type = "text" name = "userName"><br>
+		パスワード:<input type = "password" name = "userPass"><br>
+		<input type = "hidden" name = "action" value = "login">
+		<input type = "submit" value = "ログイン">
+	</form>
+	<hr>
+	<a href="jdynamic/UserAythServlet?action=logout">ログアウト</a>
+
+</body>
+</html>
