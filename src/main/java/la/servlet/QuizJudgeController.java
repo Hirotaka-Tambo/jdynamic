@@ -28,7 +28,7 @@ public class QuizJudgeController extends HttpServlet {
 		
 		request.setAttribute("resultMessage", result);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("QuizResultDisplayController");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/QuizResultDisplayController");
 		dispatcher.forward(request, response);
 		
 		
